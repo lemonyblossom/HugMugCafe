@@ -1,0 +1,841 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-size: 1.3rem;
+   color: rgb(216, 199, 190);
+   background-color: rgb(5, 4, 3);
+   font-family: 'Quicksand', sans-serif;
+}
+
+section {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-content: center;
+
+}
+
+/*------HEADER-------*/
+Header {
+   width: 100%;
+   height: 40vw;
+   display: flex;
+   flex-direction: column;
+   background-image: url(Img/close-up-of-hot-latte-coffee-in-the-cafe-banner-for-website-header-design-with-copy-space-for-text-free-photo.jpg);
+   background-size: cover;
+   justify-content: flex-start;
+   align-items: stretch;
+   margin: 0;
+}
+
+.headline {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   height: 100%;
+   color: #ffefe1;
+   writing-mode: vertical-rl;
+   font: 3.8rem Serif;
+   padding: 30px 0 0 20px;
+   margin: 0px;
+   font-size: 5vw;
+}
+
+
+/*--------elements------*/
+
+h1 {
+   display: flex;
+   color: #fff4e8;
+   align-items: flex-end;
+   flex-direction: row;
+
+}
+
+h2 {
+   color: #f5dbc8;
+   text-align: center;
+   padding: 5px;
+   margin: 0px;
+}
+
+h3 {
+   color: #f5dbc8;
+   text-align: center;
+   padding: 10px;
+   font-size: 1.5rem;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(235, 205, 183);
+   transition: 300ms;
+}
+
+a:hover {
+   color: #ffffff;
+   transform: rotate(5deg);
+}
+
+
+p {
+   display: flex;
+   width: 100%;
+   text-align: start;
+   justify-content: center;
+   font-size: 1.1rem;
+   flex-direction: column;
+   align-items: stretch;
+   padding: 5px 20px 5px 20px;
+}
+
+/*------------Navbar----------*/
+nav {
+   display: none;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   position: fixed;
+   background-image: linear-gradient(to top, #20171200, #150f0c);
+   width: 100%;
+   height: min-content;
+   z-index: 1;
+}
+
+/* nav Links */
+.navbar a {
+   float: left;
+   font-size: 16px;
+   color: #f2dcd1;
+   text-align: center;
+   padding: 10px;
+   margin: 5px;
+   text-decoration: none;
+   transition: 200ms;
+   border-radius: 20px;
+}
+
+/* dropdown container */
+.dropdown {
+   float: left;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+   border: none;
+   color: #fff8f5;
+   padding-top: 6px;
+   padding: 4px 5px 4px 8px;
+   margin: 10px;
+   background-color: #190e05;
+   border: solid 1px #ffffff43;
+   border-radius: 30px;
+   transition-duration: 1s;
+
+}
+
+.dropdown .dropbtn img {
+   object-fit: cover;
+   width: 30px;
+   height: 30px;
+}
+
+/*On hover*/
+.navbar a:hover {
+   background-color: #2b221a9d;
+}
+
+.dropdown:hover .dropbtn {
+   background-color: #361f0c;
+   border: solid 1px #ffffffc0;
+   border-radius: 15px;
+   transform: scale(1.1);
+
+}
+
+
+/* Dropdown content hidden---------------*/
+.dropdown-content,
+.dropdown-content::after {
+   display: none;
+   position: absolute;
+   background-color: #000000df;
+   margin: 1px;
+   box-shadow: 0px 6px 15px 0px #251c16e8;
+   z-index: 1;
+   border-radius: 5px;
+   text-align: center;
+}
+
+/* Links dropdown ----------------------*/
+.dropdown-content a {
+   float: none;
+   display: flex;
+   color: #e8d1c8;
+   width: 80px;
+   height: 40px;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.dropdown-content a:hover {
+   background-color: #000000;
+   color: #fff6f1;
+   border: solid 1px rgba(255, 246, 240, 0.364);
+   box-shadow: 1px 1px 5px 3px rgba(255, 234, 221, 0.572);
+   transition-duration: 800ms;
+   transform: rotate(0deg);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+
+}
+
+/**********************MENY**********************/
+
+.menu-cards {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.low-menu {
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   margin: 0;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   align-content: center;
+   width: 50%;
+   padding: 3px;
+   background-image: linear-gradient(to bottom, #7b5d4ba8, #00000000);
+   border-radius: 1px;
+   transition-duration: 1s;
+}
+
+.card-1 {
+
+   width: 100%;
+   border-radius: 5px;
+   margin: 0;
+}
+
+.card:hover {
+   transform: scale(0.98);
+   border: solid 2px white;
+   transition-duration: 1s;
+}
+
+.card-1 img {
+
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: 5px;
+   background-color: #d18080b3;
+}
+
+
+/*----------------ABOUT---------------*/
+.about {
+   width: 80%;
+   border: solid 1px #4a403d6b;
+}
+
+#about {
+   display: flex;
+   width: 100%;
+   padding: 30px;
+   flex-wrap: wrap;
+   flex-direction: column;
+   text-align: start;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+
+/*-------------VIDEO WITH IFRAME BC YOUTUBE-------------*/
+.video-clip {
+   display: flex;
+   height: fit-content;
+   width: 100vW;
+   justify-content: center;
+}
+
+
+iframe {
+   height: 300px;
+   width: 90%;
+   border: none;
+
+}
+
+/*-----------------Menu table-----------------*/
+.menu {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   background-image: linear-gradient(to top, #1e1714, #16111100);
+}
+
+.eat,
+.drink {
+   font-size: medium;
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   width: 45%;
+   border: solid 2px #4a403d6b;
+   border-radius: 5px;
+   margin: 10px;
+   box-shadow: 0px 0px 10px 0px #000000;
+   object-fit: cover;
+}
+
+.eat img {
+   display: block;
+   border-radius: 5px;
+   margin: 0;
+   padding: 10px;
+   max-height: 60vh;
+   object-fit: cover;
+   object-position: center bottom;
+}
+
+table {
+   display: flex;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   padding: 20px;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-content: stretch;
+   align-items: stretch;
+   flex-wrap: wrap;
+}
+
+th {
+   color: #ffecd9;
+   font-weight: bold;
+   text-align: start;
+}
+
+td {
+   color: #cbb0a2;
+
+}
+
+.flavor {
+   text-align: left;
+   font-style: italic;
+   font-weight: lighter;
+   padding-left: 10px;
+   font-size: medium;
+   width: 80%;
+
+}
+
+/*---------Öppettider--------*/
+.hours {
+   display: flex;
+   background-image: url(Img/focusjuice_crowded_cozy_cafe_round_tables_soft_chairs_booths_pi_eb63aa2f-1586-49c3-aa33-807b4ef21687.png);
+   width: 100vw;
+   background-position: center;
+   object-fit: cover;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: stretch;
+   align-items: center;
+   padding: 30px;
+}
+
+.hours table {
+   display: flex;
+   background-color: #190e05c9;
+   border: 1px solid #4a403d6b;
+   width: 80%;
+   text-align: justify;
+   justify-content: center;
+   flex-direction: row;
+   font-size: 1.3rem;
+}
+
+
+/*------Kurser----------*/
+article {
+   display: flex;
+   background-image: linear-gradient(to right, #1e1714, #16111100);
+   flex-direction: column;
+   width: 60%;
+   height: 100%;
+   padding: 0px;
+   border-radius: 5px;
+
+   align-content: center;
+   flex-wrap: wrap;
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.kurs {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   justify-content: center;
+}
+
+#kurser {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   flex-wrap: nowrap;
+   align-items: center;
+
+}
+
+#kurser p {
+   width: 100%;
+   padding: 20px;
+}
+
+
+.kurs-container {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+}
+
+.card-2 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-self: center;
+   height: 40%;
+   width: 90%;
+   margin: 5px;
+   background-repeat: no-repeat;
+   background-image: url(Img/info\ background.jpeg);
+   background-size: cover;
+   background-position: center right;
+   border-radius: 5px;
+
+}
+
+/*------------------FORM FOR BOOKING--------------*/
+#booking {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   align-content: space-around;
+   justify-content: space-between;
+   border-radius: 5px;
+   font-size: 1.3rem;
+}
+
+.personal-info,
+.select-class {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: stretch;
+   padding: 20px;
+}
+
+fieldset {
+   font-size: 1rem;
+   width: 90%;
+   padding: 10px;
+   margin: 10px;
+}
+
+#skicka:hover {
+   color: #000000;
+}
+
+/****************-------------FOOTER--------*************/
+footer {
+   display: flex;
+   justify-content: space-between;
+   position: absolute;
+   width: 100vw;
+   margin: 0;
+   text-align: center;
+   background: #3429293b;
+   padding: 20px;
+   padding-bottom: 20px;
+   flex-direction: row-reverse;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.socials {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   width: 20%;
+   justify-content: space-around;
+   align-items: center;
+}
+
+/*---***********icons for footer************---*/
+
+
+.fa {
+   padding: 5px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 10px;
+   transition-duration: 1s;
+}
+
+.fa-instagram:hover {
+   color: #ff3bc1ee;
+}
+
+.fa-linkedin:hover {
+   color: #028ac9;
+}
+
+.fa-pinterest:hover {
+   color: rgb(255, 0, 0);
+}
+
+.fa-github:hover {
+   color: #b578ff;
+}
+
+.fa-envelope:hover {
+   color: #d3e3ff;
+}
+
+.fa:hover {
+   transform: scale(1.8);
+}
+
+.cred {
+   font-size: 10px;
+   width: 100%;
+}
+
+.name-class {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.name-class p {
+   margin: 0;
+   padding: 0;
+}
+
+/*------Screen 320-1060 px------------------------------------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:1060px) {
+
+
+   /*--------------NAVBAR----------*/
+   .navbar {
+      display: none;
+   }
+
+   nav {
+      display: block;
+   }
+
+   article {
+      width: 80%;
+   }
+
+   .dripdropdown {
+      position: fixed;
+      display: inline-block;
+      border: none;
+      padding: 4px 5px 4px 8px;
+      margin: 15px;
+      background-color: #1f1208;
+      border: 2px solid rgb(131, 131, 131);
+      border-radius: 30px;
+      transition: 500ms;
+      z-index: 1;
+   }
+
+   .dripdropdown:hover {
+      background-color: #361f0c;
+      border: solid 2px #ffffff;
+      border-radius: 25px;
+      transform: scale(1.1);
+
+   }
+
+
+   .dripdropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #000000ee;
+      box-shadow: 0px 8px 16px 0px rgba(13, 11, 11, 0.883);
+      padding: 10px 16px;
+      border-radius: 10px;
+
+
+
+   }
+
+   .dripdropdown-content a {
+      font-size: medium;
+      color: #feebe1;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+
+   }
+
+   .dripdropdown:hover .dripdropdown-content {
+      display: block;
+      float: none;
+      margin-top: 7px;
+      margin-left: -10px;
+      min-width: 200px;
+   }
+
+   .dripdropdown-content a:hover {
+      background-color: #000000;
+      color: #fff6f1;
+      border: solid 1px #f3d5c6;
+      box-shadow: 1px 1px 5px 3px #e4d1c884;
+      transition-duration: 800ms;
+   }
+
+   /*----------HEADLINE-----------*/
+   .headline {
+      writing-mode: horizontal-tb;
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 0;
+      padding: 15px;
+      font: 9vw Serif;
+      display: flex;
+      text-align: center;
+      justify-content: flex-end;
+      align-content: flex-start;
+   }
+
+   /*--------------MENU----------*/
+
+   section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .about {
+      width: 90%;
+   }
+
+   .menu {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+   }
+
+   /*--tabell meny--*/
+
+   .eat,
+   .drink {
+      width: 90%;
+      border-radius: 5px;
+      font-size: 1.1em;
+
+   }
+
+   .eat img {
+      max-height: 90vh;
+   }
+
+   /*---------Kurser---------*/
+
+   .kurs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .kurs-container {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+   }
+
+   .card-2 {
+      width: 90%;
+      background-position: center top;
+   }
+}
+
+
+/*------Screen 600-1060 px------------------------------------------------------------------------------*/
+@media screen and (min-width:600px) and (max-width:1060px) {
+
+   /*--------MENU---------*/
+   .low-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+   }
+
+
+   .card {
+      flex-direction: column;
+      width: 40vw;
+      max-width: fit-content;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 15px;
+   }
+
+   .card-1 img {
+      height: 30vh;
+      width: 100%;
+      min-width: 30vw;
+      max-width: fit-content;
+      object-fit: cover;
+   }
+
+   .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+   }
+
+   /*-------------Booking form-----------*/
+   /*--booking form--*/
+   #booking {
+      flex-direction: column;
+      width: 80%;
+
+      justify-content: flex-end;
+      align-items: stretch;
+
+   }
+
+   .hours table {
+      display: flex;
+      width: 100%;
+      font-size: 1.3rem;
+   }
+}
+
+/*----Screen 320px-600 px-----------------------------------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width: 600px) {
+
+   /*-----------navbar----------*/
+   .navbar {
+      display: none;
+   }
+
+   /*-------------MENU----------*/
+   .low-menu {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+   }
+
+   .card {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      min-width: 350px;
+      border-radius: 5px;
+      ;
+   }
+
+
+   .card-1 {
+      width: 100%;
+      min-width: 30vw;
+      border-radius: 10px;
+      padding: 5px;
+   }
+
+   .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+   }
+
+   /*--tabell meny--*/
+
+   .eat img {
+      display: none;
+   }
+
+   .about {
+      width: 100%;
+   }
+
+   /*--booking form--*/
+   #booking {
+      display: flex;
+      flex-direction: column;
+      width: inherit;
+      flex-wrap: nowrap;
+      align-items: stretch;
+
+   }
+
+   fieldset {
+      font-size: 1.2em;
+      width: 60vw;
+      height: max-content;
+      padding: 10px;
+      margin: 10px;
+      align-self: center;
+   }
+
+   .hours table {
+      display: flex;
+      background-color: #190e05c9;
+      border: 1px black solid;
+      width: 100%;
+   }
+
+}
